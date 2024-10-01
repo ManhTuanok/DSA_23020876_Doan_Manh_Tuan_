@@ -6,7 +6,7 @@ struct Node {
     Node* next;
     Node* prev;
 };
-
+/////////
 struct DoubleLinkedList {
     Node* head;
     // do phuc tap O(n)
