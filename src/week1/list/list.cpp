@@ -6,11 +6,11 @@ using namespace std;
 
 List::List(int *array, int count)
 {
-  array = array;
-  count = count;
+    array = array;
+    count = count;
 }
 
-
+// do phuc tap O(1)
 void List::get(int k)
 {
     if (count < k || count == 0)
@@ -26,7 +26,7 @@ void List::get(int k)
         }
     }
 }
-
+// do phuc tap O(n)
 void List::addFirst(int value)
 {
     if (count == 0)
@@ -48,7 +48,7 @@ void List::addFirst(int value)
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(1)
 void List::addLast(int value)
 {
     array[count] = value;
@@ -58,7 +58,7 @@ void List::addLast(int value)
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(n)
 void List::addPosition(int p, int value)
 {
     if (p < 0 || p > count)
@@ -77,7 +77,7 @@ void List::addPosition(int p, int value)
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(n)
 void List::removeFirst()
 {
     if (count == 0)
@@ -95,7 +95,7 @@ void List::removeFirst()
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(1)
 void List::removeLast()
 {
     if (count == 0)
@@ -109,7 +109,7 @@ void List::removeLast()
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(1)
 void List::removePosition(int p)
 {
     if (p < 0 || p >= count)
@@ -127,7 +127,7 @@ void List::removePosition(int p)
         cout << array[i] << " ";
     }
 }
-
+// do phuc tap O(n)
 void List::displayBackward()
 {
     for (int i = count - 1; i >= 0; i--)
@@ -136,7 +136,7 @@ void List::displayBackward()
     }
     cout << endl;
 }
-
+// do phuc tap O(n)
 void List::displayForward()
 {
     for (int i = 0; i < count; i++)
@@ -145,4 +145,3 @@ void List::displayForward()
     }
     cout << endl;
 }
-
